@@ -74,7 +74,7 @@ CPRISMA requires Python 3.7 or higher, Numpy, Pandas, and Argparse.
 
 CPRISMA can be installed by downloading the source code or cloning the repository executing:
 
-git clone https://https://github.com/seapovedac/cprisma
+git clone https://github.com/seapovedac/cprisma.git
 
    # Uninstallation    #
 
