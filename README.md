@@ -57,8 +57,8 @@ University of São Paulo, Ribeirão Preto - SP, Brazil
 CPRISMA is free software; you can redistribute it and/or modify it under the terms of the
 GNU General Public License, version 3 (GPLv3).
 
-CPRISMA (version 1.0, 2021) gives color to multiple sequence alignment based on an 
-input of numerical data.
+CPRISMA (version 1.0, 2021) is a bioinformatics program that gives color to multiple sequence alignment 
+based on an input of numerical data.
 
 More details can be found in the user’s guide documentation found in [docs/CPRISMA user's guide - 2021.pdf].
 
