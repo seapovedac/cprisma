@@ -74,17 +74,26 @@ CPRISMA requires Python 3.7 or higher, Numpy, Pandas, and Argparse.
 
 CPRISMA can be installed by downloading the source code or cloning the repository executing:
 
-git clone https://github.com/seapovedac/cprisma.git
+	git clone https://github.com/seapovedac/cprisma.git
+
+Then:
+
+	pip install .
 
    # Uninstallation    #
+   
+ To uninstall CPRISMA you can invoke the next command:
 
-#pip uninstall cprisma
+	pip uninstall cprisma
 
    # Getting started    #
 
 CPRISMA can be executed invoking the command:
 
 	cprisma
+or
+
+	python -m cprisma
 
 A list of options can be visualized with the -h option:
 	
@@ -98,6 +107,10 @@ For the correct execution of the program, three different files should appear in
 
 The alignment data is based on outputs of the MUSCLE program in ClustalW format and the data of the CSV
 file can be any type of numerical information given in columns.
+
+   # Examples #
+   
+CPRISMA can be tested using the files in [examples/].
 
    # Additional documentation    #
 
