@@ -58,7 +58,7 @@ on the next publications:
 
 * Poveda-Cuevas, S.A.; Etchebest, C.; Barroso da Silva, F. L. Insights into the ZIKV NS1 Virology from 
 Different Strains through a Fine Analysis of Physicochemical Properties. ACS Omega, 3(11) 
-pp 16212–16229, 2018 (doi https://doi.org/10.1021/acsomega.8b02081).
+pp 16212–16229, 2018 (doi: https://doi.org/10.1021/acsomega.8b02081).
 
 * Poveda-Cuevas, S.A.; Etchebest, C.; Barroso da Silva, F. L. Identification of Electrostatic Epitopes 
 in Flavivirus by Computer Simulations: The PROCEEDpKa Method. ACS Journal of Chemical Information and Modeling, 
