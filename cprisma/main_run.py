@@ -6,9 +6,12 @@ import sys
 import os
 
 # To get array_get.py
-cwd = os.path.abspath(os.getcwd())
-sys.path.insert(0, cwd)
-from array_get import array_get
+try:
+	cwd = os.path.abspath(os.getcwd())
+	sys.path.insert(0, cwd)
+	from array_get import array_get
+except ModuleNotFoundError:
+	pass
 
 def str2bool(v):
 
