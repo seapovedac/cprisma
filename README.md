@@ -36,7 +36,7 @@
                               ......  ...        ...   ...  .........  .........  ...   ...  ...   ...        	
  
  
-                         *** CPRISMA (Colored PRotein by Inputs and Sets of Multiple Alignments) - 2021 ***
+                         *** CPRISMA (Coloring PRoteins by Inputs and Sets of Multiple Alignments) - 2021 ***
 
 CPRISMA is written by:
 
