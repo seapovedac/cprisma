@@ -2,8 +2,6 @@
 <img src="images/logo_cprisma.png" width=600 </div>
 </p>
 
-<img data-toggle="modal" data-target="[data-modal='10.5281/zenodo.4705212']" src="/badge/DOI/10.5281/zenodo.4705212.svg" alt="10.5281/zenodo.4705212">
-
 CPRISMA is written by:
 
 Sergio Alejandro Poveda Cuevas
@@ -33,6 +31,10 @@ in Flavivirus by Computer Simulations: The PROCEEDpKa Method. ACS Journal of Che
 * Poveda-Cuevas, S.A.; Barroso da Silva, F. L.; Etchebest, C. How the Strain Origin of ZIKV NS1 Protein Impacts its
 Dynamics and Implications to their Differential Virulence. ACS Journal of Chemical Information and Modeling, 
 (In Press), 2021 (doi: https://doi.org/10.1021/acs.jcim.0c01377).
+
+Another sources:
+
+<a href="https://doi.org/10.5281/zenodo.4705212"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4705212.svg" alt="DOI"></a>
 
    # Requirements    #
 
