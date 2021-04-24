@@ -2,7 +2,7 @@
 <img src="images/logo_cprisma.png" width=600 </div>
 </p>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4705212.svg)](https://doi.org/10.5281/zenodo.4705212)
+<img data-toggle="modal" data-target="[data-modal='10.5281/zenodo.4705212']" src="/badge/DOI/10.5281/zenodo.4705212.svg" alt="10.5281/zenodo.4705212">
 
 CPRISMA is written by:
 
