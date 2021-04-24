@@ -2,6 +2,8 @@
 <img src="images/logo_cprisma.png" width=600 </div>
 </p>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4705212.svg)](https://doi.org/10.5281/zenodo.4705212)
+
 CPRISMA is written by:
 
 Sergio Alejandro Poveda Cuevas
