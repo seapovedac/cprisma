@@ -1,5 +1,5 @@
 <p align="center">
-<img src="images/" width=600 </div>
+<img src="images/logo_cprisma.png" width=600 </div>
 </p>
 
 CPRISMA is written by:
