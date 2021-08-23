@@ -1,6 +1,9 @@
 <p align="center">
 <img src="images/logo_cprisma.png" width=600 </div>
 </p>
+<p align="center">
+<img src="images/logo_title.png" width=600 </div>
+</p>
 
 CPRISMA is written by:
 
