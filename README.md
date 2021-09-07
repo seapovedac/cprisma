@@ -33,7 +33,7 @@ in Flavivirus by Computer Simulations: The PROCEEDpKa Method. ACS Journal of Che
 
 * Poveda-Cuevas, S.A.; Barroso da Silva, F. L.; Etchebest, C. How the Strain Origin of ZIKV NS1 Protein Impacts its
 Dynamics and Implications to their Differential Virulence. ACS Journal of Chemical Information and Modeling,
-(In Press), 2021 (doi: https://doi.org/10.1021/acs.jcim.0c01377).
+61(3) pp 1516–1530, 2021, 2021 (doi: https://doi.org/10.1021/acs.jcim.0c01377).
 
 Another sources:
 
