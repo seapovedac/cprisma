@@ -1,5 +1,5 @@
 <p align="center">
-<img src="images/Presentation_GitHub_version.png" width=500 </div>
+<img src="images/Presentation_GitHub_version.png" width=1000 </div>
 </p>
 
 CPRISMA is written by:
