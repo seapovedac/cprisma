@@ -273,6 +273,7 @@ class Alignment(Information):
         self.ali_method=ali_method
         self.aligment_col=compile(self.met_ref,
                                   self.dict_ali,
+                                  self.ch_r,
                                   self.tr_r,
                                   self.df_aa,
                                   self.protein,
@@ -290,6 +291,7 @@ class Alignment(Information):
                                   self.tridimensional_col,
                                   self.check_dict_vis,
                                   self.res_per_col,
+                                  self.acc,
                                   self.ali_log)
 
         print(f'Process completed!')
