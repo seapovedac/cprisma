@@ -544,7 +544,7 @@ def verify_array_feature(default_parameter,dic_array,ck_dic_arr,feature,ck_ref,d
 
                                             elif sub_k == 'pkac': # pKa condition
 
-                                                ck_res_ion=all(item in ch_r for item in list(tr_r)) # checking if tr_r have ionizable residues
+                                                ck_res_ion=any(item in ch_r for item in list(tr_r)) # checking if tr_r have ionizable residues
 
                                                 if ck_res_ion: # pkac just work with at least one ionizable residue in your list of target residues
 

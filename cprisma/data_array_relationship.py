@@ -861,8 +861,10 @@ def color(protein,hola,df_bas_col,list_op_col,df_array,df_aux_protein,df_bas_ope
                             else: # Mutations acids or basics
                                 if row_col == 'D' or row_col == 'E':
                                     mutation_col=22 # Acid one
-                                else:
+                                elif row_col == 'R' or row_col == 'H' or row_col == 'K' or row_col == 'Y' or row_col == 'C':
                                     mutation_col=54 # Basic one
+                                elif row_col == 'A' or row_col == 'N' or row_col == 'Q' or row_col == 'G' or row_col == 'I' or row_col == 'L' or row_col == 'M' or row_col == 'F' or row_col == 'P' or row_col == 'S' or row_col == 'T' or row_col == 'W' or row_col == 'V' or row_col == 'Z' or row_col == 'X' or row_col == '0':
+                                    mutation_col=116 # Basic one
                                 pka_col=mutation_col
                                 df_auxs=color_residues(pka_col,colors,df_auxs,name_col)
 
