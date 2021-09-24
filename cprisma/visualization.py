@@ -254,11 +254,18 @@ def max_sc(dict_scale):
 
     ## Fucntion for scale ##
 
-def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html,tr_r,mutation,type_bool,ali_method):
+def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html,tr_r,mutation,type_bool,factor_color,ali_method):
 
     import pandas as pd
     import copy
     import os
+
+    if factor_color == 0:
+        max_fact=max
+    elif factor_color < 0:
+        max_fact=(max/factor_color)*-1
+    elif factor_color > 0:
+        max_fact=(max/factor_color)
 
     list_sc=[] # list for second method
 
@@ -288,7 +295,7 @@ def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html
 
                 if ali_method == 1:
 
-                    html.write(f"{' '*max_z}\t-{max} {aux_scale} {max}\n")
+                    html.write(f"{' '*max_z}\t-{max_fact} {aux_scale} {max_fact}\n")
 
                 elif ali_method == 2:
 
@@ -300,7 +307,7 @@ def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html
                         pklen0=pklen
 
                     space=' '*int(pklen0/2)
-                    sc_vis='\t\t<small>'+space+'-'+str(max)+' '+aux_scale+' '+str(max)+'</small>'
+                    sc_vis='\t\t<small>'+space+'-'+str(max_fact)+' '+aux_scale+' '+str(max_fact)+'</small>'
                     list_sc.append(sc_vis)
 
             else:
@@ -336,10 +343,10 @@ def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html
                         scale+=0.1
 
                     if ali_method == 1:
-                        html.write(f"{' '*max_z}\t{ttrr} -{max_r}{' '*aux_space} {aux_scale} {max_r}{' '*aux_space}\n")
+                        html.write(f"{' '*max_z}\t{ttrr} -{max_r/factor_color}{' '*aux_space} {aux_scale} {max_r/factor_color}{' '*aux_space}\n")
                     elif ali_method == 2:
                         aux_space=' '*aux_space
-                        sc_vis='\t\t'+ttrr+' -'+str(max_r)+aux_space+' '+aux_scale+' '+str(max_r)+aux_space
+                        sc_vis='\t\t'+ttrr+' -'+str(max_r/factor_color)+aux_space+' '+aux_scale+' '+str(max_r/factor_color)+aux_space
                         list_sc.append(sc_vis)
 
             if type (mutation) == type_bool:
@@ -396,9 +403,9 @@ def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html
             if type(max) != type_list:
 
                 if ali_method == 1:
-                    html.write(f"{' '*max_z}\t{min} {aux_scale} &#177;{max}\n\n")
+                    html.write(f"{' '*max_z}\t{min} {aux_scale} &#177;{max_fact}\n\n")
                 elif ali_method == 2:
-                    sc_vis='\t\t'+str(min)+' '+aux_scale+' &#177;'+str(max)+'\t'
+                    sc_vis='\t\t'+str(min)+' '+aux_scale+' &#177;'+str(max_fact)+'\t'
                     list_sc.append(sc_vis)
 
             else:
@@ -407,7 +414,7 @@ def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html
                     if ali_method == 1:
                         html.write(f"{' '*max_z}\t{tr_r[tt]} {min[tt]} {aux_scale} &#177;{max[tt]}\n")
                     elif ali_method == 2:
-                        sc_vis='\t\t'+tr_r[tt]+' '+str(min[tt])+' '+aux_scale+' &#177;'+str(max[tt])+'\t'
+                        sc_vis='\t\t'+tr_r[tt]+' '+str(min[tt])+' '+aux_scale+' &#177;'+str(max[tt]/factor_color)+'\t'
                         list_sc.append(sc_vis)
 
             # for tmc
@@ -476,10 +483,10 @@ def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html
                 if type(max) != type_list:
 
                     if ali_method == 1:
-                        html.write(f"{' '*max_z}\t{tar}{min} {aux_scale} &#177;{max}\n")
+                        html.write(f"{' '*max_z}\t{tar}{min} {aux_scale} &#177;{max_fact}\n")
 
                     elif ali_method == 2:
-                        sc_vis='\t\t'+tar+str(min)+' '+aux_scale+' &#177;'+str(max)+'\t'
+                        sc_vis='\t\t'+tar+str(min)+' '+aux_scale+' &#177;'+str(max_fact)+'\t'
                         list_sc.append(sc_vis)
 
                 else:
@@ -488,9 +495,9 @@ def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html
                     if descriptor_col != 'fsc':
 
                         if ali_method == 1:
-                            html.write(f"{' '*max_z}\t{tar}{min[tt]} {aux_scale} &#177;{max[tt]}\n")
+                            html.write(f"{' '*max_z}\t{tar}{min[tt]} {aux_scale} &#177;{max[tt]/factor_color}\n")
                         elif ali_method == 2:
-                            sc_vis='\t\t'+tar+str(min[tt])+' '+aux_scale+' &#177;'+str(max[tt])+'\t'
+                            sc_vis='\t\t'+tar+str(min[tt])+' '+aux_scale+' &#177;'+str(max[tt]/factor_color)+'\t'
                             list_sc.append(sc_vis)
 
                     # 'fsc'
@@ -499,9 +506,9 @@ def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html
                         for ttt in range(len(tr_r)):
                             tar=tr_r[ttt]+' '
                             if ali_method == 1:
-                                html.write(f"{' '*max_z}\t{tar}{min[tt]} {aux_scale} &#177;{max[ttt]}\n")
+                                html.write(f"{' '*max_z}\t{tar}{min[tt]} {aux_scale} &#177;{max[ttt]/factor_color}\n")
                             if ali_method == 2:
-                                sc_vis='\t\t'+tar+str(min[tt])+' '+aux_scale+' &#177;'+str(max[ttt])+'\t'
+                                sc_vis='\t\t'+tar+str(min[tt])+' '+aux_scale+' &#177;'+str(max[ttt]/factor_color)+'\t'
                                 list_sc.append(sc_vis)
 
                 tt+=1
@@ -554,7 +561,7 @@ def scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html
 
     ## Function for method of visualization 1 ##
 
-def method_visualization1(html,dict_main,met_ref,dict_aux,dict_num,df_col_array,df_col,df_mxr,df_vis,cc,list_big,max_z,protein,n,l,type_bool,type_list,tr_r,conservation,ali_method):
+def method_visualization1(html,dict_main,met_ref,dict_aux,dict_num,df_col_array,df_col,df_mxr,df_vis,cc,list_big,max_z,protein,n,l,type_bool,type_list,tr_r,conservation,factor_color,ali_method):
 
     import copy
 
@@ -610,12 +617,12 @@ def method_visualization1(html,dict_main,met_ref,dict_aux,dict_num,df_col_array,
                     html.write(f"\n")
             cc+=1
 
-            scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html,tr_r,mutation,type_bool,ali_method)
+            scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html,tr_r,mutation,type_bool,factor_color,ali_method)
             html.write(f"\n\n")
 
     ## Function for method of visualization 2 ##
 
-def method_visualization2(html,dict_main,met_ref,dict_aux,dict_num,protein,n,l,list_big,max_z,df_col_array,df_col,df_mxr,df_vis,join,type_list,type_bool,tr_r,conservation,check_dict_vis,ali_method):
+def method_visualization2(html,dict_main,met_ref,dict_aux,dict_num,protein,n,l,list_big,max_z,df_col_array,df_col,df_mxr,df_vis,join,type_list,type_bool,tr_r,conservation,check_dict_vis,factor_color,ali_method):
 
     import copy
 
@@ -700,7 +707,7 @@ def method_visualization2(html,dict_main,met_ref,dict_aux,dict_num,protein,n,l,l
             dict_num1=copy.deepcopy(dict_num)
             descriptor_col,color_list,mutation,max,min,vis_deg,vis_ref=read_feature(df_col_array,df_col,df_mxr,df_vis,cc)
             dict_scale[cc]=''
-            scale_aux=scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html,tr_r,mutation,type_bool,ali_method)
+            scale_aux=scale(protein,vis_deg,descriptor_col,type_list,min,max,max_z,color_list,html,tr_r,mutation,type_bool,factor_color,ali_method)
             dict_scale[cc]=scale_aux
             cc+=1
 

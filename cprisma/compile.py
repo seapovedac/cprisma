@@ -259,10 +259,10 @@ def compile(met_ref, dict_ali, tr_r, df_aa, protein, dict_ref, df_ope, df_mxr, d
 
     if ali_method == 1:
 
-        method_visualization1(html,dict_main,met_ref,dict_aux,dict_num,df_auxs_col,df_col,df_mxr,df_vis,cc,list_big,max_z,protein,n,l,type_bool,type_list,tr_r,conservation,ali_method)
+        method_visualization1(html,dict_main,met_ref,dict_aux,dict_num,df_auxs_col,df_col,df_mxr,df_vis,cc,list_big,max_z,protein,n,l,type_bool,type_list,tr_r,conservation,factor_color,ali_method)
 
     elif ali_method == 2:
 
-        method_visualization2(html,dict_main,met_ref,dict_aux,dict_num,protein,n,l,list_big,max_z,df_auxs_col,df_col,df_mxr,df_vis,join,type_list,type_bool,tr_r,conservation,check_dict_vis,ali_method)
+        method_visualization2(html,dict_main,met_ref,dict_aux,dict_num,protein,n,l,list_big,max_z,df_auxs_col,df_col,df_mxr,df_vis,join,type_list,type_bool,tr_r,conservation,check_dict_vis,factor_color,ali_method)
 
     html.write('</small>\n</font>\n</pre>\n</body>\n</html>')
