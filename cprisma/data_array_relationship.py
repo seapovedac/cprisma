@@ -828,10 +828,12 @@ def color(protein,hola,df_bas_col,list_op_col,df_array,df_aux_protein,df_bas_ope
 
                     # nc
                     if descriptor == 'nc':
+                        shift=1
                         df_auxs=df_auxs.append({name_col:color} , ignore_index=True)
 
                     # 'fac', 'fmac'
                     elif descriptor == 'fac' or descriptor == 'fmac':
+                        shift=1
                         # fac
                         if type(mutated_res) != type_bool:
                             residue_col=residues[goal_res.index(row_col)]
@@ -848,7 +850,7 @@ def color(protein,hola,df_bas_col,list_op_col,df_array,df_aux_protein,df_bas_ope
 
                     # 'pkac'
                     elif descriptor == 'pkac':
-
+                        shift=1
                         # Getting values of operation df
                         column_col_ope=seq_ope.iloc[: , col_c-1]
 
