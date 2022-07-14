@@ -21,16 +21,19 @@ Some similar examples of the possible outputs obtained with CPRISMA can be found
 on the next publications:
 
 * Poveda-Cuevas, S.A.; Etchebest, C.; Barroso da Silva, F. L. Insights into the ZIKV NS1 Virology from
-Different Strains through a Fine Analysis of Physicochemical Properties. ACS Omega, 3(11)
+Different Strains through a Fine Analysis of Physicochemical Properties. ACS Omega, 3(11),
 pp 16212–16229, 2018 (doi: https://doi.org/10.1021/acsomega.8b02081).
 
 * Poveda-Cuevas, S.A.; Etchebest, C.; Barroso da Silva, F. L. Identification of Electrostatic Epitopes
 in Flavivirus by Computer Simulations: The PROCEEDpKa Method. ACS Journal of Chemical Information and Modeling,
-60(2) pp 944–963, 2020 (doi: https://doi.org/10.1021/acs.jcim.9b00895).
+60(2), pp 944–963, 2020 (doi: https://doi.org/10.1021/acs.jcim.9b00895).
 
 * Poveda-Cuevas, S.A.; Barroso da Silva, F. L.; Etchebest, C. How the Strain Origin of ZIKV NS1 Protein Impacts its
 Dynamics and Implications to their Differential Virulence. ACS Journal of Chemical Information and Modeling,
-61(3) pp 1516–1530, 2021, 2021 (doi: https://doi.org/10.1021/acs.jcim.0c01377).
+61(3), pp 1516–1530, 2021, 2021 (doi: https://doi.org/10.1021/acs.jcim.0c01377).
+
+* Poveda-Cuevas, S.A.; Etchebest, C.; Barroso da Silva, F. L. Self-association features of NS1 proteins from different flaviviruses. Virus Research,
+318,198838, 2022 (doi: https://doi.org/10.1016/j.virusres.2022.198838).
 
 Another sources:
 
