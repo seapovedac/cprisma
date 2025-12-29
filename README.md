@@ -40,7 +40,7 @@ Another sources:
 <a href="https://zenodo.org/badge/latestdoi/343247831"><img src="https://zenodo.org/badge/343247831.svg" alt="DOI"></a>
 
 *** If you use this program cite as:
-	Poveda-Cuevas, S.A., 2021. CPRISMA (Coloring Proteins by Inputs and Sets of Multiple Alignments) software. https://github.com/seapovedac/cprisma. ***
+	Poveda-Cuevas, S.A., 2021. CPRISMA (Coloring PRoteins by Inputs and Sets of Multiple Alignments) software. https://github.com/seapovedac/cprisma. ***
 
    # Requirements    #
 
